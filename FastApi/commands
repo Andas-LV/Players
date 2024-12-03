@@ -1,0 +1,10 @@
+RUN - fastapi dev main.py
+
+CREATE REQS - pip freeze > requirements.txt
+INSTALL REQS - pip install -r requirements.txt
+
+MAKEMIGRATIONS - alembic revision --autogenerate -m "migration name"
+MIGRATE - alembic upgrade head
+
+CREATE VENV - python -m venv .venv
+ACTIVATE VENV - .venv\Scripts\Activate.ps1
